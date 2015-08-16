@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset = "utf-8">
+		<title>Audio Player</title>
+		<link type = "text/css" rel = "stylesheet" href = "player.css">
+		<link rel="shortcut icon" type="image/x-icon" href="images/player.ico" />
+		<link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<section class="playerView"
+			<div class = "tableContainer">
+					<div class = "tableCell" id = "dropzone">	
+						<fieldset class = "player">
+							<legend><center>  Now you are listening to  </center></legend>
+							<marquee onmouseover="stop();" onmouseout="start();" behavior="scroll" vspace="10" scrollAmount="1" scrollDelay="30" direction="left" width="300">
+								<label id="currentSong">File is not set</label>
+							</marquee>
+							<fieldset class = "buttons">
+								<input type="button" class="button-play-hide" id="play" />
+								<input type="button" class="button-stop-hide" id="stop" />
+	<!--							
+								<input type="range" class="seek" id="seek" value="0" max=""/>
+							-->
+							</fieldset>
+							<input type="file" name="song" id="file" accept="audio/*">
+							<select name="preset" id="presetList">
+								<option value="normal">Normal</option>
+								<option value="pop">Pop</option>
+								<option value="rock">Rock</option>
+								<option value="jazz">Jazz</option>
+								<option value="classic">Classic</option>
+							</select>
+							<div class = "eq-wrap">
+							</div>
+						</fieldset>
+					</div>
+					<div class = "tableCell">
+						<fieldset class = "visualization">
+							<legend> Visualization </legend>
+							<canvas class="visualizer" width="430" height="280"></canvas>
+						</fieldset>
+					</div>
+			</div>
+		</section>
+	</body>
+	<script content="text/javascript" src="player.js"></script>
+</html>
