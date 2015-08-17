@@ -87,10 +87,12 @@ input.button-play-hide {
 
 input.button-stop {
 	background-color: #70AB8F;
+    outline: none;
 }
 
 input.button-stop-hide {
 	background-color: #DC5B21;
+    outline: none;
 }
 
 input.button-pause {
@@ -115,19 +117,9 @@ select:hover, select:focus, select:active {
 	-webkit-box-shadow: 4px 4px 8px rgba(0,0, 0, 0.4);
 	-moz-box-shadow: 4px 4px 8px rgba(0,0, 0, 0.4);
 	box-shadow: 4px 4px 8px rgba(0,0, 0, 0.4);
-/*	-webkit-transform: scale(1.05);
-	-moz-transform: scale(1.05);
-	transform: scale(1.05);
-*/
 }
 
 select {
-	/*
-	-webkit-transition:all 0.5s linear;
-	-moz-transition:all 0.5s linear;
-	-o-transition:all 0.5s linear;
-	transition:all 0.5s linear;
-	*/
 	-moz-box-shadow: 2px 2px 4px 0px #006773;
 	-webkit-box-shadow:  2px 2px 4px 0px #006773;
 	box-shadow: 2px 2px 4px 0px #006773;
@@ -144,19 +136,9 @@ input[type=file]:hover, input[type=file]:focus, input[type=file]:active {
 	-webkit-box-shadow: 4px 4px 8px rgba(0,0, 0, 0.4);
 	-moz-box-shadow: 4px 4px 8px rgba(0,0, 0, 0.4);
 	box-shadow: 4px 4px 8px rgba(0,0, 0, 0.4);
-/*	-webkit-transform: scale(1.05);
-	-moz-transform: scale(1.05);
-	transform: scale(1.05);
-*/
 }
 
 input[type=file] {
-	/*
-	-webkit-transition:all 0.5s linear;
-	-moz-transition:all 0.5s linear;
-	-o-transition:all 0.5s linear;
-	transition:all 0.5s linear;
-	*/
 	-moz-box-shadow: 2px 2px 4px 0px #006773;
 	-webkit-box-shadow:  2px 2px 4px 0px #006773;
 	box-shadow: 2px 2px 4px 0px #006773;
@@ -170,10 +152,8 @@ input[type=file] {
 fieldset {
 	padding: 0px;
 	margin:0px;
-
 }
 
-/*audio, */
 .eq-wrap {
   display: inline-block;
 }
@@ -186,14 +166,7 @@ input.slider {
   margin: 100px -70px 0 0;
 }
 
-//input.seek {
-//	width: 150px;
-//}
-
 input[type="file"] {
-	/*
-  display: block;
-  */
   width: 295px;
 }
 
@@ -227,19 +200,6 @@ input[type=range]:focus {
     outline: none;
 }
 
-/*
-input[type=range]:focus::-webkit-slider-runnable-track {
-    background: #ccc;
-}
-*/
-
-/*
-input[type=range] {
-    border: 1px solid white; 
-
-}
-*/
-
 input[type=range]::-moz-range-track {
     height: 5px;
     background: #ddd;
@@ -254,14 +214,6 @@ input[type=range]::-moz-range-thumb {
     border-radius: 50%;
     background: #70AB8F;
 }
-
-/*hide the outline behind the border*/
-/*
-input[type=range]:-moz-focusring{
-    outline: 1px solid white;
-    outline-offset: -1px;
-}
-*/
 
 input[type=range]:focus::-moz-range-thumb, input[type=range]:hover::-moz-range-thumb {
     height: 19px;
